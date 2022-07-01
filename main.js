@@ -25,13 +25,15 @@ function game(min, max, attemptsNumber, randomNumber, playerName){
     alert(`Hello ${playerName}!
     I take int from ${min} to ${max}! 
     find it. You have ${attemptsNumber} attempts`);
-
+    let answersNumber = [];
     for (let i = 0; i <=attemptsNumber; i++) {
         const playerAnswer =  prompt('name int','')
         if (playerAnswer > randomNumber){
             alert(`my number less than your. your attempts ${attemptsNumber - i}`)
+            answersNumber.push(playerAnswer)
         }else if(playerAnswer < randomNumber){
             alert(`my number more than your. your attempts ${attemptsNumber - i}`)
+            answersNumber.push(playerAnswer)
         }else{
             alert('You right');
            return
