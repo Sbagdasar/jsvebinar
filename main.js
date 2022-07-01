@@ -36,7 +36,7 @@ function game(min, max, attemptsNumber, randomNumber, playerName){
             alert('You right');
            return
         }
-        alert('Sorry. You lost')
     }
+    alert('Sorry. You lost')
 }
 game(settings.min, settings.max, settings.attemptsNumber, RANDOM_NUMBER, PLAYER_NAME)
