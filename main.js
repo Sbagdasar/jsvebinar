@@ -22,9 +22,21 @@ function getPlayerName(){
     return playerName
 }
 function game(min, max, attemptsNumber, randomNumber, playerName){
-    alert(`Hello!
+    alert(`Hello ${playerName}!
     I take int from ${min} to ${max}! 
     find it. You have ${attemptsNumber} attempts`);
 
+    for (let i = 0; i <=attemptsNumber; i++) {
+        const playerAnswer =  prompt('name int','')
+        if (playerAnswer > randomNumber){
+            alert(`my number less than your. your attempts ${attemptsNumber - i}`)
+        }else if(playerAnswer < randomNumber){
+            alert(`my number more than your. your attempts ${attemptsNumber - i}`)
+        }else{
+            alert('You right');
+           return
+        }
+        alert('Sorry. You lost')
+    }
 }
-game(settings.min, settings.max, RANDOM_NUMBER, PLAYER_NAME)
+game(settings.min, settings.max, settings.attemptsNumber, RANDOM_NUMBER, PLAYER_NAME)
