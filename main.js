@@ -6,3 +6,5 @@ const settings= {
     min:10,
     attemptsNumber:10
 };
+console.log(settings.attemptsNumber);
+console.log(settings['max']);
