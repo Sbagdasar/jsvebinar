@@ -22,5 +22,9 @@ function getPlayerName(){
     return playerName
 }
 function game(min, max, attemptsNumber, randomNumber, playerName){
+    alert(`Hello!
+    I take int from ${min} to ${max}! 
+    find it. You have ${attemptsNumber} attempts`);
 
 }
+game(settings.min, settings.max, RANDOM_NUMBER, PLAYER_NAME)
