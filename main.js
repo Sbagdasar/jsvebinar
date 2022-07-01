@@ -8,3 +8,8 @@ const settings= {
 };
 console.log(settings.attemptsNumber);
 console.log(settings['max']);
+
+// const getRandomNumber = ()=>{}
+function getRandomNumber(){
+
+}
