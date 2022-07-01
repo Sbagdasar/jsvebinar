@@ -7,6 +7,8 @@ const settings= {
     attemptsNumber:10
 };
 const RANDOM_NUMBER = getRandomNumber();
+const PLAYER_NAME = getPlayerName();
+
 console.log(settings.attemptsNumber);
 console.log(settings['max']);
 
@@ -14,4 +16,8 @@ console.log(settings['max']);
 function getRandomNumber(){
     const randomNumber = Math.round(Math.random()*100);
     return randomNumber
+}
+function getPlayerName(){
+    const playerName = prompt('what is your name?', '')
+    return playerName
 }
