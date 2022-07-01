@@ -1,3 +1,8 @@
-const MAX = 100;
+/*const MAX = 100;
 const MIN = 0;
-const ATTEMPTS_NUMBER = 10;
+const ATTEMPTS_NUMBER = 10;*/
+const settings= {
+    max:100,
+    min:10,
+    attemptsNumber:10
+};
