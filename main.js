@@ -6,10 +6,12 @@ const settings= {
     min:10,
     attemptsNumber:10
 };
+const RANDOM_NUMBER = getRandomNumber();
 console.log(settings.attemptsNumber);
 console.log(settings['max']);
 
 // const getRandomNumber = ()=>{}
 function getRandomNumber(){
-
+    const randomNumber = Math.round(Math.random()*100);
+    return randomNumber
 }
