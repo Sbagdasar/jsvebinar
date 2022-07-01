@@ -21,3 +21,6 @@ function getPlayerName(){
     const playerName = prompt('what is your name?', '')
     return playerName
 }
+function game(min, max, attemptsNumber, randomNumber, playerName){
+
+}
